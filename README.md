@@ -19,10 +19,10 @@ This is an Epicodus student project.
 
 
 ## Test Specs
-* Describe: Function
-* Code: 
-* Test 1:
-* Expected Output:
+* Describe: Function pizza(cheese, pepperoni, mushrooms, onions, small, large)
+* Code: new pizza(cheese, pepperoni, mushrooms, onions, small, large) 
+* Test 1: pizza object should now contain the inputted values
+* Expected Output: pizza {cheese, pepperoni, mushrooms, onions, small, large}
 
 * Describe:
 * Code: 
