@@ -20,19 +20,18 @@ This is an Epicodus student project.
 
 ## Test Specs
 * Describe: Function pizza(cheese, pepperoni, mushrooms, onions, small, large)
-* Code: new pizza(cheese, pepperoni, mushrooms, onions, small, large) 
 * Test 1: pizza object should now contain the inputted values
+* Code: new pizza(cheese, pepperoni, mushrooms, onions, small, large) 
 * Expected Output: pizza {cheese, pepperoni, mushrooms, onions, small, large}
 
-* Describe:
-* Code: 
-* Test 2: 
-* Expected 
+* Test 2: pizza.price()
+* Code: Pizza object should now contain a price parameter
+* Expected Pizza {cheese, pepperoni, mushrooms, onions, small, large, cheesePrice}
+ 
+* Test 3: Pizza price prototype should now add 10 to price if small pizza is "Yes" or add 15 if pizza is "Yes" to large.
+* Code: pizza.price()
+* Expected Output: Pizza price will start at 10 or 15 before increasing with toppings.
 
-* Describe: Function 
-* Code: 
-* Test 3: 
-* Expected Output: 
 
 * Describe: Function 
 * Code: 
