@@ -19,7 +19,18 @@ Pizza.prototype.price = function() {
   }
   if (this.cheese === "Yes") {
     price += 2;
+  } else if (this.pepperoni === "Yes") {
+    price += 2;
+  } else if (this.mushrooms === "Yes") {
+    price += 1;
   }
+ if (this.onions=== "Yes") {
+    price += 1;
+  }
+  
+  this.pizzaPrice = price;
+
+
   
 
 
