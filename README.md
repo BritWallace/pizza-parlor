@@ -24,9 +24,13 @@ This is an Epicodus student project.
 * Code: new pizza(cheese, pepperoni, mushrooms, onions, small, large) 
 * Expected Output: pizza {cheese, pepperoni, mushrooms, onions, small, large}
 
+<br>
+
 * Test 2: pizza.price()
 * Code: Pizza object should now contain a price parameter
 * Expected Pizza {cheese, pepperoni, mushrooms, onions, small, large, cheesePrice}
+
+<br>
  
 * Test 3: Pizza price prototype should now add 10 to price if small pizza is "Yes" or add 15 if pizza is "Yes" to large.
 * Code: pizza.price()
