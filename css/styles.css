@@ -1,0 +1,27 @@
+body {
+  color:rgb(158, 186, 20);
+  background-color: black;
+  }
+  .form-group{
+    border: solid black 2px;
+    border-radius: 25px;
+    padding: 50px;
+    border-width: thick;
+    height: 50px;
+    width: 300px;
+    background-color: rgb(144, 18, 41)
+  }
+  /* The element to apply the animation to */
+  @keyframes example {
+    from { background-color:rgb(210, 30, 183)}
+    to { background-color: rgb(184, 184, 73);}
+  }
+  div {
+    width: 100px; 
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  
+  

@@ -31,7 +31,13 @@ Pizza.prototype.price = function() {
   this.pizzaPrice = price;
 
 
-  
+  // UI Logic 
+
+function showPrice(Pizza) {
+  $(".pizzaPricing").html(pizza.pizzaPrice);
+}
+
+
 
 
 
