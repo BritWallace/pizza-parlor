@@ -28,7 +28,7 @@ Pizza.prototype.price = function() {
     price += 1;
   }
   
-  this.pizzaPrice = price;
+  this.pizzaPrice = "$" + price + ".00";
 
 
   // UI Logic 
@@ -36,12 +36,30 @@ Pizza.prototype.price = function() {
 function showPrice(Pizza) {
   $(".pizzaPricing").html(pizza.pizzaPrice);
 }
+$(document).ready(function(){
+  $("form#formOne").submit(function(event){
+    event.preventDefault();
+    const cheese = $("select#cheese").val();
+    const pepperoni = $("select#pepperoni").val();
+    const mushrooms = $("select#mushrooms").val();
+    const onions = $("select#onions").val();
+    const small = $("select#small").val();
+    const large = $("select#large").val();
+    $("select#cheese").val("")
+    $("select#pepperoni").val("")
+    $("select#mushrooms").val("")
+    $("select#onions").val("")
+    $("select#small").val("")
+    $("select#large").val("")
+    
+    var newPizza = new pizza(cheese, pepperoni, mushrooms, onions, small, large);
+    newPizza.price();
+    showPrice(newPizza);
+  });
+});
 
 
 
 
-
-// let pie = new Pizza();
-//   return pie;
 
 

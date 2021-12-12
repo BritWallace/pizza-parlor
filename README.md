@@ -2,7 +2,7 @@ Pizza Parlor
 
 # _Pizza Parlor Project_
 
-#### By _**Brit Wallace_**_
+#### By  **Brit Wallace** 
 
 #### An Epicodus student project. 
 
@@ -33,12 +33,6 @@ This is an Epicodus student project.
 * Expected Output: Pizza price will start at 10 or 15 before increasing with toppings.
 
 
-* Describe: Function 
-* Code: 
-* Test 4: 
-* Expected Output: 
-
-
 This Pizza Parlor project will allow user to order a pizza with their preferred toppings.
 ## Setup/Installation Requirements
 
@@ -47,7 +41,7 @@ This Pizza Parlor project will allow user to order a pizza with their preferred 
 
 ## Known Bugs
 
-* 
+* Having issues hooking up the UI logic.
 
 # License
 
