@@ -32,7 +32,7 @@ This is an Epicodus student project.
 
 <br>
  
-* Test 3: Pizza price prototype should now add 10 to price if small pizza is "Yes" or add 15 if pizza is "Yes" to large.
+* Test 3: Pizza price prototype should now add 10 to price if small pizza selected or add 15 if pizza if large is selected.
 * Code: pizza.price()
 * Expected Output: Pizza price will start at 10 or 15 before increasing with toppings.
 

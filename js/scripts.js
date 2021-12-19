@@ -1,34 +1,34 @@
-function Pizza(cheese, pepperoni, mushrooms, onions, small, large) {
+function Pizza(cheese, pepperoni, mushrooms, onions, size, price) {
   this.cheese = cheese;
   this.pepperoni = pepperoni;
   this.mushrooms = mushrooms;
   this.onions = onions;
-  this.small = small;
-  this.large = large;
+  this.size = size;
+  this.price = price;
 } 
 
 
 Pizza.prototype.price = function() {
   let price;
   price = 0;
-  if (this.small === "Yes") {
+  if (this.size === "small") {
     price += 10;
-  } else if (this.large === "Yes") {
+  } else if (this.size === "large") {
     price += 15;
     }
-  }
   if (this.cheese === "Yes") {
     price += 2;
   } else if (this.pepperoni === "Yes") {
     price += 2;
   } else if (this.mushrooms === "Yes") {
     price += 1;
-  }
- if (this.onions=== "Yes") {
+  } else if (this.onions === "Yes") {
     price += 1;
   }
+  this.pizzaPrice = price;
+}
+
   
-  this.pizzaPrice = "$" + price + ".00";
 
 
   // UI Logic 
@@ -43,16 +43,14 @@ $(document).ready(function(){
     const pepperoni = $("select#pepperoni").val();
     const mushrooms = $("select#mushrooms").val();
     const onions = $("select#onions").val();
-    const small = $("select#small").val();
-    const large = $("select#large").val();
+    const size = $("select#size").val();
     $("select#cheese").val("")
     $("select#pepperoni").val("")
     $("select#mushrooms").val("")
     $("select#onions").val("")
-    $("select#small").val("")
-    $("select#large").val("")
+    $("select#size").val("")
     
-    var newPizza = new pizza(cheese, pepperoni, mushrooms, onions, small, large);
+    var newPizza = new Pizza(cheese, pepperoni, mushrooms, onions, size, price);
     newPizza.price();
     showPrice(newPizza);
   });
