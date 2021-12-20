@@ -1,16 +1,16 @@
-function Pizza(cheese, pepperoni, mushrooms, onions, size, price) {
+function Pizza(cheese, pepperoni, mushrooms, onions, size) {
   this.cheese = cheese;
   this.pepperoni = pepperoni;
   this.mushrooms = mushrooms;
   this.onions = onions;
   this.size = size;
-  this.price = price;
 } 
 
 
 Pizza.prototype.price = function() {
   let price;
   price = 0;
+  console.log("first", price);
   if (this.size === "small") {
     price += 10;
   } else if (this.size === "large") {
@@ -26,6 +26,7 @@ Pizza.prototype.price = function() {
     price += 1;
   }
   this.pizzaPrice = price;
+  console.log("hit it", price);
 }
 
   
@@ -33,7 +34,8 @@ Pizza.prototype.price = function() {
 
   // UI Logic 
 
-function showPrice(Pizza) {
+function showPrice(pizza) {
+  console.log(pizza.pizzaPrice);
   $(".pizzaPricing").html(pizza.pizzaPrice);
 }
 $(document).ready(function(){
@@ -50,7 +52,7 @@ $(document).ready(function(){
     $("select#onions").val("")
     $("select#size").val("")
     
-    var newPizza = new Pizza(cheese, pepperoni, mushrooms, onions, size, price);
+    var newPizza = new Pizza(cheese, pepperoni, mushrooms, onions, size);
     newPizza.price();
     showPrice(newPizza);
   });
