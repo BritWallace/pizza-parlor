@@ -25,7 +25,8 @@ Pizza.prototype.price = function() {
   } else if (this.onions === "Yes") {
     price += 1;
   }
-  this.pizzaPrice = price;
+  this.pizzaPrice = "$" + price + ".00";
+  ;
   console.log("hit it", price);
 }
 

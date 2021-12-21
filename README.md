@@ -45,7 +45,7 @@ This Pizza Parlor project will allow user to order a pizza with their preferred 
 
 ## Known Bugs
 
-* Having issues hooking up the UI logic.
+* Having issues with the layout.
 
 # License
 
